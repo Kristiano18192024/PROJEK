@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb.exe</title>
+  </head>
+  <body>
+    <input type="text" id="password">
+    <button type="submit" onclick="getInputValue()">Enter</button>
+    <p id="paragraph"></p>
+    <script>
+      function getInputValue() {
+        var getElement = document.getElementById('password');
+        var getValue = getElement.value;
+        if (getValue == 71812009) {
+          alert("Sandi Benar");
+        } else {
+          f_1();
+          function f_1() {
+            alert("You Are An Idiot");
+            f_2();
+          }
+          function f_2() {
+            alert("You Are An Idiot");
+            f_1();
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
