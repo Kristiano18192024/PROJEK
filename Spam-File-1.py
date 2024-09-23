@@ -8,5 +8,8 @@ while True:
     with open(file_name, "w") as file:
         file.write(Data)
         print(f"File {file_name} berhasil dibuat")
+    with open(file_name, "w") as file:
+        file.write(Data)
+        print(f"File {file_name} berhasil dibuat")
     
-    time.sleep(0.05)
+    time.sleep(1)
